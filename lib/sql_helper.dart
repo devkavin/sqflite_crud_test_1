@@ -17,6 +17,8 @@ class SQLHelper {
       'dbtech.db',
       version: 1,
       onCreate: (sql.Database database, int version) async {
+        // Create the tables
+        print("... Creating a table");
         await createTables(database);
       },
     );
