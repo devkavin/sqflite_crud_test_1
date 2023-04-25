@@ -137,6 +137,13 @@ class _HomePageState extends State<HomePage> {
           color: Colors.orange[200],
           margin: const EdgeInsets.all(5),
           child: ListTile(
+            onTap: () => ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(
+                content: Text('Tile $index Tapped'),
+                // shape: StadiumBorder(),
+                behavior: SnackBarBehavior.floating,
+              ),
+            ),
             title: Text(_journals[index]['title']),
             subtitle: Text(_journals[index]['description']),
             trailing: SizedBox(
