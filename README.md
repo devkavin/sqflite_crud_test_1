@@ -1,6 +1,6 @@
 # sqflite_crud_test_1
 
-A new Flutter project.
+A new Flutter project to practice SQFlite CRUD operations.
 
 ## Getting Started
 
